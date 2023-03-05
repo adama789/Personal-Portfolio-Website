@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adam Cedro</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://kit.fontawesome.com/af96511af8.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body style="background-image: url('{{ url_for('static', filename='images/homepage_v1.png')}}')">
+
+<!----------------header------------------>
+
+        <div id="header">
+            <div class="container">
+                
+                <nav>
+                    <img src="static/images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Projects</a></li>
+                        <li><a href="static/images/Adam_Cedro_CV.pdf" download >CV</a></li>
+                    
+                    </ul>
+                </nav>
+                
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Adam Cedro</span></h1>
+                    <div class="social-icons">
+                        <a href="https://github.com/adama789"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/adam-cedro-53427025b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:cedrq@tlen.pl"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/adam.cedro.39/"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!----------------about-me---------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="about-col-1">
+                <img src="static/images/aboutme.png">
+            </div>
+
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About <span>Me</span></h1>
+                        <p class="text">
+                            I specialize in Python <i class="fa-brands fa-python"></i> language and technologies such as Flask and Django. 
+                            <br><br>My passion for programming allows me to constantly expand my qualifications and experience,<br> 
+                            as well as provide innovative solutions. 
+                            <br><br>I am committed to creating high-quality, user-friendly applications <br>that 
+                            also deliver solutions for automating business processes. 
+                            <br><br>I am ready to work in a dynamic environment and continuously develop my skills.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Languages')">Languages</p>
+                            <p class="tab-links" onclick="opentab('Technologies')">Technologies</p>
+                            <p class="tab-links" onclick="opentab('Aplications')">Applications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Languages">
+                            <ul>
+                                <li><span>Python</span><br></li>
+                                <li><span>Javascript</span><br></li>
+                                <li><span>C++</span><br></li>
+                                <li><span></span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Technologies">
+                            <ul>
+                                <li><span>Flask</span><br></li>
+                                <li><span>Django</span><br></li>
+                                <li><span>HTML</span><br></li>
+                                <li><span>CSS</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Aplications">
+                            <ul>
+                                <li><span>Git</span><br></li>
+                                <li><span>Linux</span><br></li>
+                                <li><span>Github</span><br></li>
+                                <li><span>SQLite</span><br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!----------------projekty---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My <span>Projects</span></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Projekt 1</h2>
+                <p>W tym projekcie zrobilem bardzo dobre rzeczy</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pepper-hot"></i>
+                <h2>Projekt 2</h2>
+                <p>W tym projekcie zrobilem bardzo dobre rzeczy</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Projekt 3</h2>
+                <p>W tym projekcie zrobilem bardzo dobre rzeczy</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------contact------------>
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact <span>Me</span></h1>
+                <p><i class="fa-solid fa-paper-plane"></i> cedrq@tlen.pl</p>
+                <p><i class="fa-solid fa-phone"></i></i> +48 735 271 571</p>
+                <div class="social-icons">
+                    <a href="https://github.com/adama789"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adam-cedro-53427025b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:cedrq@tlen.pl"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/adam.cedro.39/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" autocomplete="off" placeholder="Name" required>
+                    <input type="email" name="Email" autocomplete="off" placeholder="Email" required>
+                    <textarea name="Message" rows="6" autocomplete="off" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbzDsmmEcpb0ccQD64kFPgwRXZzyaV7lQlzXX65W5MYLwi1IfqQSJ6zS5gzWVDu0bA4-ow/exec"
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+            })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
