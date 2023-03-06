@@ -10,7 +10,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 body {
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,6 +95,7 @@ nav ul li a:hover::after{
     padding: 150px 0;
     color: #ababab;
 }
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -141,7 +141,6 @@ nav ul li a:hover::after{
     padding: 5px 0;
     color: #ababab ;
     margin-bottom: 25px;
-
 }
 
 .tab-links::after{
@@ -176,7 +175,6 @@ nav ul li a:hover::after{
     color: #f0f0f0;
 }
 
-
 .tab-contents{
     display: none;
 }
@@ -185,7 +183,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/*----------------services-----------*/
+/*----------------services----------------*/
 
 #services{
     padding: 125px 0;
@@ -233,18 +231,17 @@ nav ul li a:hover::after{
     font-size: 14px;
     margin-top: 20px;
     display: inline-block;
-
 }
+
 .services-list div p{
     font-size: 15px;
     color: #cdcdcd;
 }
 
+/*----------------contact-me----------------*/
 
-/*----------contact-----------*/
 .contact{
     padding-bottom: 30px;
-    
 }
 
 .contact-left{
@@ -253,14 +250,12 @@ nav ul li a:hover::after{
 
 .contact-right{
     flex-basis: 60%;
-
 }
 
 .contact-left p{
     margin-top: 30px;
     color: #ababab;
     font-family: 'Poppins', sans-serif;
-
 }
 
 .contact-left p i{
@@ -295,8 +290,7 @@ nav ul li a:hover::after{
     border-radius: 10px; 
     text-decoration: none;
     color: #f0f0f0;
-    transition: background 0.4s;
-    
+    transition: background 0.4s;  
 }
 
 .btn.btn2{
@@ -335,9 +329,9 @@ textarea{
     resize: none;
 }
 
-/*-------------css for small screens--------*/
+/*----------------small-screens----------------*/
+
 @media only screen and (max-width: 600px){
-    
     .header-text{
         margin-top: 65%;
         font-size: 20px;
@@ -351,6 +345,7 @@ textarea{
     .logo{
         display: none;
     }
+    
     .sub-title{
         font-size: 40px;
     }
@@ -378,6 +373,7 @@ textarea{
     .tab-contents ul li{
         font-size: 18px;
     }
+    
     ul{
         display: inline-block;
         list-style: none;
@@ -386,7 +382,6 @@ textarea{
         font-size: 5px;
         text-align: center;
     }
-
 }
 
 #msg{
